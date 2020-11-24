@@ -1,0 +1,35 @@
+
+.nawigacja {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 150px;
+    list-style-type: none;
+    position: sticky;
+    background-color: #C0C4C8;
+    opacity: 40%;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 20px;
+    height: 50px;
+    align-items: center;
+    justify-content: end;
+   
+
+}
+
+li {
+    color: #2D2927;
+    font-size: 20px;
+    font-family: 'Playfair Display SC', serif;
+    justify-content: center;
+}
+
+#left {
+    justify-self: start;
+}
+
+
+
+p {
+    font-size: 20px;
+}
