@@ -20,17 +20,18 @@
     <main>
         <nav>
             <ul class="nawigacja">
-                <li id="left">Weronika Brzeczkowska-Kuzianik</li>
+                <li id="left"><a href="index.html">Weronika</a></li>
                 <li></li>
-                <li>O mnie</li>
-                <li>Podróże</li>
-                <li>Kontakt</li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#trips">Podróże</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
-        
+        <a name="home"></a>
         <div class="home">
           <img src="https://res.cloudinary.com/ded5al291/image/upload/v1606317961/CodersCamp%20projekt%201%2C%20wizytowka/logo-removebg-preview_x7lihj.png">
         </div>
+        <a name="about"></a>
         <div class="about">
             <img src="https://res.cloudinary.com/ded5al291/image/upload/v1606319057/CodersCamp%20projekt%201%2C%20wizytowka/IMG_20180426_195011_tnpokz.jpg">
             <h1>Cześć!</h1>
@@ -46,7 +47,7 @@
             Jednak jedną z moich największych pasji są podróże. Na tej stronie chciałabym pokazać Wam zdjęcia z moich najciekawszych wyjazdów.</p>
         </div>
         <hr>
-        <div class="trips">
+        <div class="trips"><a name="trips"></a> 
            <h1>Moje podróże</h1>
            <figure class="gallery">
             <img src="https://res.cloudinary.com/ded5al291/image/upload/v1606339416/CodersCamp%20projekt%201%2C%20wizytowka/11143642_10155808984275603_5389072602176098494_o.jpg_sdleng.jpg" alt="Kuba">
@@ -167,36 +168,41 @@
            <figure class="gallery">
             <img src="https://res.cloudinary.com/ded5al291/image/upload/v1606339754/CodersCamp%20projekt%201%2C%20wizytowka/156343_10150346997125603_4511710_n.jpg_w802lf.jpg" alt="Francja">
             <figcaption>Francja</figcaption>
-           </figure>      
+           </figure>     
         </div>
         <hr>
-        <div class="contact">
+        <div class="contact"><a name="contact">
             <form>          
                 <div class="box">             
                 <h1>Skontaktuj się ze mną</h1>             
                 <label>
                 <span>Twoje imię</span>                
-                <input type="text" class="wpis" name="nazwa" id="nazwa"/>             
+                <input type="text" class="input" name="nazwa" id="nazwa"/>             
                 </label>              
                 <label>                
                 <span>E-mail</span>
-                <input type="text" class="wpis" name="email" id="email"/>             
+                <input type="text" class="input" name="email" id="email"/>             
                 </label>              
                 <label>                 
                 <span>Temat</span>                 
-                <input type="text" class="wpis" name="temat" id="temat"/>             
+                <input type="text" class="input" name="temat" id="temat"/>             
                 </label>             
                 <label>                 
                 <span>Treść wiadomości</span>                 
-                <textarea class="wiadomosc" name="wiadomosc" id="tresc"></textarea>                 
-                <input type="button" class="button" value="Wyślj" />             
+                <textarea class="message" name="message" id="content"></textarea>                 
+                <input type="submit" class="button" value="Wyślj" />             
                 </label>                                  
                 </div>     
                 </form>
-
+        </a>
+        </div>
+        <div class="animation">
+            <div class="move"></div>
         </div>
 
-        <footer></footer>
+        <footer>
+            <p>Weronika Brzęczkowska-Kuzianik<br> Utrecht, 2020</p>
+        </footer>
     
       
     </main>
