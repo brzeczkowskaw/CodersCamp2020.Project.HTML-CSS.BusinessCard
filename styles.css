@@ -53,6 +53,18 @@ a:visited {
     color: var(--list);
 }
 
+a:link {
+    color: var(--list);
+}
+
+a:active {
+    color: var(--list);
+}
+
+a:hover {
+    color: var(--background);
+}
+
 #left {
     justify-self: start;
 }
