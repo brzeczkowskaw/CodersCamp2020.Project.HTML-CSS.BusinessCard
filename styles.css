@@ -239,6 +239,10 @@ div.box .wiadomosc {
     height: 150px;
 }
 
+textarea, input {
+    color: var(--text);
+}
+
 div.box .button	{
     margin: 0 0 10px 0;
     padding: 4px 7px;
