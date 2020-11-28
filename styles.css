@@ -425,6 +425,13 @@ div.box .button:hover {
         padding: 7px 7px;
         width: 50%;
     }
+    div.box label {
+        display: inline-block;
+    }
+    div.box label span {
+        display: inline-block;
+    }
+
     div.box .message {
         padding: 7px 7px;
         width: 50%;
