@@ -182,7 +182,7 @@ div.about p {
     .about {
         margin: 0;
     }
-    div.about {grid-template-columns: 500px;
+    div.about {grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr 350px;
     grid-template-areas: "hello"
                         "about"
@@ -290,11 +290,11 @@ figcaption {
 
 @media (max-width: 500px) {
     div.trips {
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 150px);
     }
     figure.gallery img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     figure:active img {
             transform: scale(1.4);  
