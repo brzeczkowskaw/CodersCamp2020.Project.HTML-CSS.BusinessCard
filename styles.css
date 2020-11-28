@@ -127,6 +127,7 @@ div.home img {
         height: 250px;
         margin-top: 0px;
         margin: 0px;
+        background-size: cover;
     }
 
    div.home img {
@@ -425,7 +426,7 @@ div.box .button:hover {
         width: 250px;
     }
     div.box .button {
-        left: 70%;
+        left: 65%;
     }
 }
 
