@@ -423,11 +423,11 @@ div.box .button:hover {
     }
     div.box .input {
         padding: 7px 7px;
-        width: 60%;
+        width: 50%;
     }
     div.box .message {
         padding: 7px 7px;
-        width: 60%;
+        width: 50%;
     }
     div.box .button {
         left: 40%;
