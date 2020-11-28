@@ -25,7 +25,7 @@ body {
         overflow-x: hidden;
     }
     main {
-        margin: 0;
+        margin-right: 0;
     }
 }
 
@@ -425,7 +425,7 @@ div.box .button:hover {
         width: 250px;
     }
     div.box .button {
-        left: 284px;
+        left: 70%;
     }
 }
 
