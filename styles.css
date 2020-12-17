@@ -6,11 +6,19 @@
     --hover: #AFCAEC;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--background);
-    margin: 0px;
-    margin-bottom: 0px;
-    padding: 0%;
     overflow-x: hidden;
 }
 
@@ -18,13 +26,8 @@ body {
     body {
         background: var(--background);
         margin: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
         padding: 0%;
         overflow-x: hidden;
-    }
-    main {
-        margin-right: 0;
     }
 }
 
@@ -42,29 +45,25 @@ body {
     }
 }
 
-
 .navbar {
     display: grid;
     grid-template-columns: 1fr auto 180px 180px 180px;
     list-style-type: none;
     background-color: var(--navbar);
-    opacity: 40%;
     position: fixed;
-    top: -16px;
-    margin-left: 0px;
-    margin-right: 20px;
-    padding-right: 20px;
-    padding: 20px;
-    height: 50px;
-    width: 99%;
+    top: 0px;
+    padding: 10px 20px 20px 20px;
+    height: 20px;
+    width: 100%;
     align-items: center;
-    justify-content: end;
     z-index: 1;
     text-align: center;
 }
 
 li {
     color: var(--list);
+    position: relative;
+    /*top: 35%;*/
     font-size: 20px;
     font-family: 'Playfair Display SC', serif;
     justify-content: center;
@@ -85,7 +84,8 @@ li a:link {
 }
 
 li a:active {
-    color: var(--list);
+    color:  #034291;
+    font-weight: bold;
 }
 
 li a:hover {
@@ -100,11 +100,10 @@ li a:hover {
 
 @media (max-width: 500px) {
     .navbar {
-        grid-template-columns: 1fr auto 80px 80px 120px;
-        margin-left: 0px;
+        grid-template-columns: 1fr auto 70px 90px 110px;
         height: 20px;
-        width: 100%;
-        text-align: center;
+        text-align: start;
+        padding-bottom: 10px;
     }
     li {
         font-size: 15px;
@@ -113,11 +112,10 @@ li a:hover {
 
 @media (min-width: 501px) and (max-width: 1023px) {
     .navbar {
-        grid-template-columns: 1fr auto 80px 80px 150px;
-        margin-left: 0px;
+        grid-template-columns: 1fr auto 70px 90px 110px;
         height: 20px;
-        width: 100%;
-        text-align: center;
+        text-align: start;
+        padding-bottom: 10px;
     }
     li {
         font-size: 15px;
@@ -125,7 +123,8 @@ li a:hover {
 }
 
 div.home {
-    background: url("https://res.cloudinary.com/ded5al291/image/upload/v1606316117/CodersCamp%20projekt%201%2C%20wizytowka/71947724_10162436315095603_1495712864659308544_o_ccsmpg.jpg");
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 60%,
+    var(--background)), url("https://res.cloudinary.com/ded5al291/image/upload/v1606316117/CodersCamp%20projekt%201%2C%20wizytowka/71947724_10162436315095603_1495712864659308544_o_ccsmpg.jpg");
     background-size: cover;
     height: 600px;
     margin-top:-100px;
@@ -150,7 +149,7 @@ div.home img {
 
 @media (max-width: 500px) {
     div.home  {
-        height: 180px;
+        height: 200px;
         margin-top: 0px;
         margin: 0px;
         background-size: cover;
@@ -197,17 +196,16 @@ div.about img {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    justify-self: center;
     align-self: center;
     cursor: auto;
 }
 
 div.about h1 {
     color: var(--text);
-    font-size: 40px;
+    font-size: 42px;
     font-family: 'Playfair Display SC', serif;
     grid-area: hello; 
-    align-self: center; 
+    margin-bottom: 30px;
 }
 
 div.about p {
@@ -221,9 +219,6 @@ div.about p {
 }
 
 @media (max-width: 500px) {
-    .about {
-        margin: 0;
-    }
     div.about {grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr 350px;
     grid-template-areas: "hello"
@@ -255,22 +250,13 @@ div.about p {
     
     div.about p {
         color: var(--text);
-        font-size: 15px;
+        font-size: 12px;
         font-family: 'Open Sans', sans-serif;
         grid-area: about;
         text-align: center;
         width: 80%;
         align-self: center;
     }
-}
-
-hr {
-    position: relative;
-    top: 30px;
-    color: var(--text);
-    width: 70%;
-    height: 2px;
-    background: var(--text);
 }
 
 div.trips {
@@ -282,18 +268,20 @@ div.trips {
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 400px);
     grid-row-gap: 20px;
     text-align: center;
     margin-bottom: 60px;
 }
 
-div.trips h1 {
+div.trips h2 {
     color: var(--text);
     font-size: 40px;
     font-family: 'Playfair Display SC', serif;
     text-align: center;
     grid-column: 1 / -1;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 figure {
@@ -301,27 +289,21 @@ figure {
 }
 
 figure.gallery img {
-    width: 250px;
+    width: 400px;
     height: 250px;
     object-fit: cover;
     border: 2px solid; 
+    border-right: 2px solid;
     border-color: var(--text);
-    margin-left: 0px;
-}
-
-img {
     cursor: zoom-in;
-    transition: transform .3s;
+    transition: all 0.4s ease-in-out;
 }
   
-figure {
-    outline: none;
-    border: none;
-    background: transparent;
-}
   
-figure:active img {
-    transform: scale(2);  
+figure:hover img {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 figcaption {
@@ -336,7 +318,7 @@ figcaption {
     }
     figure.gallery img {
         width: 150px;
-        height: 150px;
+        height: 100px;
     }
     figure:active img {
             transform: scale(1.4);  
@@ -344,14 +326,17 @@ figcaption {
     figure {
         margin: 0;
     }
+figcaption {
+    font-size: 9px;
+}
 }
 
 @media (min-width: 501px) and (max-width: 1023px) {
     div.trips {
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 300px);
     }
     figure.gallery img {
-        width: 200px;
+        width: 300px;
         height: 200px;
     }
     figure:active img {
@@ -361,7 +346,6 @@ figcaption {
         margin: 0;
     }
 }
-
 
 div.contact {
     height: auto;
@@ -388,11 +372,8 @@ div.box {
 div.box h1 {
     color: var(--list);
     text-align: center;
-    padding: 5px 0 5px 5px;
-    border-bottom: 1px solid var(--text);
-    border-top: 1px solid var(--text); 
+    padding: 10px 0 5px 5px;
     background-color: var(--navbar);
-    opacity: 40%;
     font-family: 'Playfair Display SC', serif;
     font-size: 25px;
 }
@@ -400,17 +381,14 @@ div.box h1 {
 div.box label {
     width: 100%;
     display: block;
-    border-top: 1px solid var(--text);
-	border-bottom: 1px solid var(--text);
     padding: 10px 0 10px 0;
     background-color: var(--navbar);
-    opacity: 40%;
 }
 
 div.box label span {
     display: block;
     color: var(--list);
-    font-size: 13px;
+    font-size: 14px;
     float: left;
     width: 100px;
     text-align: right;
@@ -437,7 +415,8 @@ div.box .message {
     border-left: 1px double var(--text);
     border-right: 1px double var(--text);
     overflow: hidden;
-    height: 150px;
+    height: 100px;
+    resize: none;
 }
 
 textarea {
@@ -458,17 +437,22 @@ div.box .button	{
     border: 0px;
     position: relative;
     top: 10px;
-    left: 382px;
+    left: 386px;
     width: 100px;
     font-family: 'Open Sans', sans-serif;
-    border-bottom: 3px double var(--navbar);
-    border-top: 3px double var(--navbar);
-    border-left: 3px double var(--navbar);
-    border-right: 3px double var(--navbar);
+    border-bottom: 5px double var(--navbar);
+    border-top: 5px double var(--navbar);
+    border-left: 5px double var(--navbar);
+    border-right: 5px double var(--navbar);
 }
 
 div.box .button:hover {
     background-color: var(--hover);
+    border-bottom: 5px double var(--text);
+    border-top: 5px double var(--text);
+    border-left: 5px double var(--text);
+    border-right: 5px double var(--text);
+    cursor: no-drop;
 }
 
 @media (max-width: 500px) {
@@ -515,7 +499,7 @@ div.box .button:hover {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-  }
+}
 
 @keyframes myanimation {
     0% {background-color: #AFCAEC; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
@@ -537,12 +521,11 @@ div.box .button:hover {
         100% {background-color: #AFCAEC; left: 0px; top: 30px; border-radius: 50% 50% 50% 50%;}
     }
 }
- 
 
 footer {
     /*position: relative;*/
     background-color: var(--navbar);
-    opacity: 40%;
+    /*opacity: 40%;*/
     height: 50px;
     text-align: right;
     font-family: 'Open Sans', sans-serif;
@@ -553,4 +536,4 @@ footer p {
     position: relative;
     right: 2%;
     top: 15%;
- }
+}
