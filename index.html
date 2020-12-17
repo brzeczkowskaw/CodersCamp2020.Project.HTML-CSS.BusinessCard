@@ -17,25 +17,25 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display+SC:wght@400;700&display=swap"
             rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="https://res.cloudinary.com/ded5al291/image/upload/v1608154841/CodersCamp%20projekt%201%2C%20wizytowka/favcon_uycrmn.png"/>
     </head>
     <body>
         <main>
             <nav>
                 <ul class="navbar">
                     <li id="left"><a href="#home">Weronika</a></li>
-                    <li> </li>
+                    <li></li>
                     <li><a href="#about">O mnie</a></li>
                     <li><a href="#trips">Podróże</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
-            <a name="home"></a>
-            <div class="home">
+            <div class="home" id="home">
                 <img
                     src="https://res.cloudinary.com/ded5al291/image/upload/v1606317961/CodersCamp%20projekt%201%2C%20wizytowka/logo-removebg-preview_x7lihj.png">
             </div>
-            <a name="about"></a>
+            
+            <div id="about"><br></div>
             <div class="about">
                 <img
                     src="https://res.cloudinary.com/ded5al291/image/upload/v1606319057/CodersCamp%20projekt%201%2C%20wizytowka/IMG_20180426_195011_tnpokz.jpg">
@@ -55,9 +55,11 @@
                     stronie chciałabym pokazać Wam zdjęcia z moich
                     najciekawszych wyjazdów.</p>
             </div>
-            <hr>
-            <div class="trips"><a name="trips"></a>
-                <h1>Moje podróże</h1>
+            
+            <div id="trips"></div>
+            <div class="trips">
+                <h2>Moje podróże</h2>
+                
                 <figure class="gallery">
                     <img
                         src="https://res.cloudinary.com/ded5al291/image/upload/v1606339700/CodersCamp%20projekt%201%2C%20wizytowka/184944_10150414438950603_603690_n.jpg_c0l0s0.jpg"
@@ -239,8 +241,7 @@
                     <figcaption>Zjednoczone Emiraty Arabskie</figcaption>
                 </figure>
             </div>
-            <hr>
-            <div class="contact"><a name="contact">
+            <div class="contact" id="contact">
                     <form>
                         <div class="box">
                             <h1>Skontaktuj się ze mną</h1>
@@ -264,7 +265,7 @@
                                 <textarea class="message" name="message"
                                     id="content"></textarea>
                                 <input type="submit" class="button"
-                                    value="Wyślj" />
+                                    value="Wyślij" />
                             </label>
                         </div>
                     </form>
