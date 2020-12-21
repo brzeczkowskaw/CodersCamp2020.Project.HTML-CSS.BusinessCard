@@ -47,7 +47,7 @@ body {
 
 .navbar {
     display: grid;
-    grid-template-columns: 1fr auto 180px 180px 180px;
+    grid-template-columns: 1fr 180px 180px 180px;
     list-style-type: none;
     background-color: var(--navbar);
     position: fixed;
@@ -68,6 +68,10 @@ li {
     font-family: 'Playfair Display SC', serif;
     justify-content: center;
     text-decoration: none;
+}
+
+li:first-of-type {
+    justify-self: start;
 }
 
 li a {
@@ -94,13 +98,9 @@ li a:hover {
     transition: .5s;
 }
 
-#left {
-    justify-self: start;
-}
-
 @media (max-width: 500px) {
     .navbar {
-        grid-template-columns: 1fr auto 70px 90px 110px;
+        grid-template-columns: 1fr 70px 90px 110px;
         height: 20px;
         text-align: start;
         padding-bottom: 10px;
@@ -112,7 +112,7 @@ li a:hover {
 
 @media (min-width: 501px) and (max-width: 1023px) {
     .navbar {
-        grid-template-columns: 1fr auto 70px 90px 110px;
+        grid-template-columns: 1fr 70px 90px 110px;
         height: 20px;
         text-align: start;
         padding-bottom: 10px;
@@ -369,7 +369,7 @@ div.box {
     opacity: 80%;
 }
 
-div.box h1 {
+div.box h2 {
     color: var(--list);
     text-align: center;
     padding: 10px 0 5px 5px;
@@ -394,6 +394,10 @@ div.box label span {
     text-align: right;
     padding: 5px 20px 0 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+div.box label:last-of-type {
+    height: 40px;
 }
 
 div.box .input {
@@ -436,7 +440,6 @@ div.box .button	{
     color: var(--list);
     border: 0px;
     position: relative;
-    top: 10px;
     left: 386px;
     width: 100px;
     font-family: 'Open Sans', sans-serif;
@@ -446,6 +449,7 @@ div.box .button	{
     border-right: 5px double var(--navbar);
 }
 
+
 div.box .button:hover {
     background-color: var(--hover);
     border-bottom: 5px double var(--text);
@@ -454,6 +458,7 @@ div.box .button:hover {
     border-right: 5px double var(--text);
     cursor: no-drop;
 }
+
 
 @media (max-width: 500px) {
     div.box {
@@ -478,9 +483,9 @@ div.box .button:hover {
     div.box .button {
         left: 40%;
     }
-    div.box h1 {
+    div.box h2 {
         font-size: 20px;
-    }
+    }  
 }
 
 .animation {
