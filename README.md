@@ -12,7 +12,7 @@
 * [Contact](#contact)
 
 ## General info
-Projest was created as a part of CodersCamp course. The main goal was to show skills related to HTML and CSS knowledge.  
+Project was created as a part of CodersCamp course. The main goal was to show skills related to HTML and CSS knowledge.  
 The idea of project was to present myself. I included short information about me and photo gallery from my trips. 
 I started my work with page structure in HTML and styled it in CSS. Favicon was designed with Affinity Designer. 
 Page includes navbar, introduction, photogallery with animation (zooming pictures), contact form, small animation and footer. 
